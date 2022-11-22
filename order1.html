@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Order</h1>
+        <div class="menu">
+            <a href="Home.html" class="active">HOME</a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="menu.html">MENU</a>
+            <a href="order1.html">ORDER</a>
+        </div>
+        <br><br>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname">
+        <br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname">
+        <br><br>
+        <label for="number">Phone Number</label>
+        <input type="number" name="number" id="number">
+        <br><br>
+        <label for="address">Address</label>
+        <textarea></textarea>
+        <br><br>
+        <label for="food">Food Item</label>
+        <input type="text" name="food" id="food">
+        <br><br>
+        <input type="radio" name="food">Starter</input><br>
+        <input type="radio" name="food">Pizza</input><br>
+        <input type="radio" name="food">Pasta</input><br>
+        <input type="radio" name="food">Burger</input><br>
+        <input type="radio" name="food">Breakfast</input><br><br>
+        <button type="order" onclick="order()">Order</button>
+        <script>   
+            function order(){
+               let order =  confirm('Confirm Order? ');
+               let message = order?"Your Order is Placed":"Your Order is on the Way";
+               alert(message);
+            }
+        </script>
+    </body>
+</html>
